@@ -1,0 +1,5 @@
+# used for CircleCI - for direct access to staging, use BASE_URL=https://staging.staging.datadesk.io
+BASE_URL="http://testing.datadesk.io"
+APPV2_URL="https://staging.staging.connectedinteractive.com/"
+NODE_ENV="test"
+WHITELABEL_CUSTOMER_ID=""

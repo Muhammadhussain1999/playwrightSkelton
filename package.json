@@ -1,0 +1,33 @@
+{
+  "name": "playwrite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "gui": "npx playwright test --ui",
+    "prepare": "husky install",
+    "format:fix": "prettier --write . '!**/*.{yaml,yml}'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.37.0",
+    "@types/uuid": "^9.0.8",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "3.2.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx, css, md}": [
+      "yarn format:fix"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+BASE_URL=https://staging.staging.datadesk.io
+APPV2_URL=https://staging.staging.connectedinteractive.com
+NODE_ENV=test
+ENV=custom
+WHITELABEL_CUSTOMER_ID=""

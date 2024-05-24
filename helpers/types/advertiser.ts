@@ -1,0 +1,33 @@
+export interface IAdvertiserGET {
+  id: number;
+  name: string;
+  email: string;
+  website: string;
+  logo_url: string;
+  address: string;
+  city: string;
+  province: string;
+  country: string;
+  zip: string;
+  phone: string;
+  logo: null | string;
+  dbm_advertiser_id: number;
+  facebook_ad_account_id: null | number | string;
+  sales_owner_id: number;
+  datadesk_sales_owner_id: number;
+  advertiser_owner_id: null | number;
+  data_partner_owner_id: null | number;
+  app_key_id: null | number;
+  is_white_label_customer: number;
+  white_label_domain: string;
+  override_default_quick_pick_audiences: number;
+  show_tactics: number;
+  lotame_sync: string;
+  external_id: string;
+  sandbox: number;
+  ts_created: string;
+  ts_updated: string;
+  ts_deleted: null | string;
+  logo_path: string;
+  users: { [key: string]: any }[];
+}

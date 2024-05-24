@@ -1,0 +1,8 @@
+node_modules/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+junit.xml
+
+# Fixtures pulled on demand
+/fixtures/configs/playwright/*

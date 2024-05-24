@@ -1,0 +1,24 @@
+version: 2.1
+
+ jobs:
+   build:
+     docker:
+       - image: mcr.microsoft.com/playwright:v1.37.0-focal
+     working_directory: ~/app
+     steps:
+       - checkout
+       - run: npm i -D @playwright/test
+       - run: npx playwright install chrome
+       - run:
+           name: "Run the test on BrowserStack"
+           command: |
+            ls -lah ./
+            ls -lah ./.circleci/
+            ls -lah ./.circleci/deployment/
+            ls -lah ./.circleci/deployment/scripts/
+            chmod a+x ./.circleci/deployment/scripts/run_tests.sh
+            chmod a+x ./run.sh
+            ./.circleci/deployment/scripts/run_tests.sh
+   build:
+     jobs:
+       - build

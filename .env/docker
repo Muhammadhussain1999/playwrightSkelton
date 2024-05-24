@@ -1,0 +1,4 @@
+BASE_URL="https://local.datadesk.io"
+APPV2_URL="https://dashboard-local.connectedinteractive.com/"
+NODE_ENV="development"
+WHITELABEL_CUSTOMER_ID=""
